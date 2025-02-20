@@ -36,7 +36,7 @@ import NewObjectsSimple from './NewObjectsSimple.svg';
 
 As you can see, no new objects represent potential nodes that are instanceof of both `Region` and `State`.
 In fact, such instances are not permitted at all.
-Each node must the instance of a _single most-specific class:_
+Each node must be the instance of a _single most-specific class:_
 
 import InvalidInstance from './InvalidInstance.svg';
 

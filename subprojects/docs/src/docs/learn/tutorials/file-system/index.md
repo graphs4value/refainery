@@ -44,7 +44,7 @@ If you click it now, it'll take you to the [Refinery web UI](#refinery-web-ui).
 
 ### Metamodel constraints
 
-Our specification not only lists the concepts (classes and relations) of [file system](#describing-domain-concepts) the domain, but also prescribes a set of **metamodel constraints** concisely.
+Our specification not only lists the concepts (classes and relations) of the [file system](#describing-domain-concepts) domain, but also prescribes a set of **metamodel constraints** concisely.
 
 :::info
 

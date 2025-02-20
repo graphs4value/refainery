@@ -141,7 +141,7 @@ pred regionWithoutEntry(Region r) <->
 ```
 
 In a graph predicate, all parameter variables must be _positively bound,_ i.e., appear in at least one positive literal (atom).
-Negative literals may further constrain the predicate match one it has been established by the positive literals.
+Negative literals may further constrain the predicate match once it has been established by the positive literals.
 
 ## Object equality
 
@@ -198,7 +198,7 @@ pred regionWithInvalidNumberOfEntries(r) <->
 
 Graph predicates may act as _derived types_ and _references_ in metamodel.
 
-A graph predicate with exactly 1 parameters can be use as if it was a class: you may use it as a [_parameter type_](#atoms) in other graph patterns, as a _target type_ of a (non-containment) [reference](../classes/#references), or in a [_scope constraint_](../logic#type-scopes).
+A graph predicate with exactly 1 parameter can be used as if it was a class: you may use it as a [_parameter type_](#atoms) in other graph patterns, as a _target type_ of a (non-containment) [reference](../classes/#references), or in a [_scope constraint_](../logic#type-scopes).
 
 _Derived references_ are graph predicates with exactly 2 parameters, which correspond the source and target node of the reference.
 

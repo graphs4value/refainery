@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Partial modeling
 
-Refinery allow precisely expressing _unknown,_ _uncertain_ or even _contradictory_ information using [four-valued logic](https://en.wikipedia.org/wiki/Four-valued_logic#Belnap).
+Refinery allows precisely expressing _unknown,_ _uncertain_ or even _contradictory_ information using [four-valued logic](https://en.wikipedia.org/wiki/Four-valued_logic#Belnap).
 During model generation, unknown aspects of the partial model get _refined_ into concrete (true or false) facts until the generated model is completed, or a contradiction is reached.
 
 The _Belnap--Dunn four-valued logic_ supports the following truth values:
@@ -15,7 +15,7 @@ The _Belnap--Dunn four-valued logic_ supports the following truth values:
 * `true` values correspond to facts known about the model, e.g., that a node is the instance of a given class or there is a reference between two nodes.
 * `false` values correspond to facts that are known not to hold, e.g., that a node is _not_ an instance of a given class or there is _no_ reference between two nodes.
 * `unknown` values express uncertain properties and design decisions yet to be made. During model refinement, `unknown` values are gradually replaced with `true` and `false` values until a consistent and concrete model is derived.
-* `error` values represent contradictions and validation failures in the model. One a model contains an error value, it can't be refined into a consistent model anymore.
+* `error` values represent contradictions and validation failures in the model. Once a model contains an error value, it can't be refined into a consistent model anymore.
 
 ## Assertions
 
@@ -91,7 +91,7 @@ import AssertionsError from './AssertionsError.svg';
 
 ### Default assertions
 
-Assertions marked with the `default` keyword have _lower priority_ that other assertions.
+Assertions marked with the `default` keyword have _lower priority_ than other assertions.
 They may contain wildcard arguments `*` to specify information about _all_ nodes in the graph.
 However, they can be overridden by more specific assertions that are not marked with the `default` keyword.
 
@@ -180,7 +180,7 @@ multi removableMulti.
 
 ## Type scopes
 
-_Type scopes_ offer finer-grained control over the number of graph nodes in the generated model (as represented by the multi-objects) that `exists` or `equals` assertions.
+_Type scopes_ offer finer-grained control over the number of graph nodes in the generated model (as represented by the multi-objects) than `exists` or `equals` assertions.
 
 A _type scope constraint_ is formed by a unary symbol (a [class](../classes/#classes) or a [predicate](../predicates) with a single parameter) and _scope range._
 Ranges have a form similar to [multiplicity constraints](../classes#multiplicity): a range `n..m` indicates a lower bound of `n` and an upper bound of `m`.
@@ -243,7 +243,7 @@ import StrongerObjectScopes from './StrongerObjectScopes.svg';
 ### Incremental scopes
 
 We may specify an _incremental_ object scope with the `+=` operator to determine the number of new instances to be added to the model.
-This is only allowed for symbol that are classes with no subclasses, as it directly influences the number of nodes represented by the corresponding `::new` object.
+This is only allowed for symbols that are classes with no subclasses, as it directly influences the number of nodes represented by the corresponding `::new` object.
 
 For example, to ensure that between 5 and 7 `State` instances are added to the model, we may write:
 
